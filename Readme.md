@@ -2,7 +2,7 @@
 
 * Студент: [Михаил Воронов](https://up.htmlacademy.ru/adaptive-individual/2/user/2556089).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
-* Сайт: [Cat Energy](https://github.com/Pohmeloff/2556089-cat-energy-2).
+* Сайт: [Кэт энерджи](https://github.com/Pohmeloff/2556089-cat-energy-2).
 
 
 ---

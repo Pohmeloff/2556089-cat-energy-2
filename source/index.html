@@ -18,17 +18,13 @@
     <div class="page-header__wrapper">
       <a class="page-header__link-cat" href="index.html" aria-current="page">
         <picture>
-          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/desktop-logo-image.svg">
-          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/tablet-logo-image.svg">
+          <source media="(min-width: 1440px)" srcset="images/desktop-logo-image.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/tablet-logo-image.svg" width="60" height="50" type="image/svg+xml">
           <img class="page-header__cat" src="images/mobile-logo-image.svg" width="33" height="38" alt="логотип сайта с разноцветным котом в костюме супергероя">
         </picture>
       </a>
       <a class="page-header__link-text" href="index.html" aria-current="page">
-        <picture>
-          <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/desktop-logo-text.svg">
-          <img class="page-header__text logo-text" src="images/mobile-tablet-logo-text.svg" width="101" height="18" alt="логотип сайта в виде текста с надписью Сat Energy">
-        </picture>
-      </a>
+        <img class="page-header__text logo-text" src="images/mobile-tablet-logo-text.svg" width="101" height="18" alt="логотип сайта в виде текста с надписью Сat Energy"></a>
     </div>
     <nav class="main-nav">
       <button class="main-nav__toggle button-toggle" type="button">
@@ -55,8 +51,11 @@
       </h2>
       <p class="choice__text">Занялся собой?Займись котом!</p>
       <picture>
-        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-desktop-feed@1x.png 1x, images/index-desktop-feed@2x.png 2x">
-        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-tablet-feed@1x.png 1x, images/index-tablet-feed@2x.png 2x">
+        <source media="(min-width: 1440px)" srcset="images/index-desktop-feed@1x.webp 1x, images/index-desktop-feed@2x.webp 2x" width="552" height="499" type="image/webp">
+        <source media="(min-width: 768px)" srcset="images/index-tablet-feed@1x.webp 1x, index-tablet-feed@2x.webp 2x" width="709" height="609" type="image/webp">
+        <source media="(min-width: 320px)" srcset="images/index-mobile-feed@1x.webp 1x, images/index-mobile-feed@2x.webp 2x" width="280" height="270" type="image/webp">
+        <source media="(min-width: 1440px)" srcset="images/index-desktop-feed@1x.png 1x, images/index-desktop-feed@2x.png 2x" width="552" height="499" type="image/png">
+        <source media="(min-width: 768px)" srcset="images/index-tablet-feed@1x.png 1x, images/index-tablet-feed@2x.png 2x" width="709" height="609" type="image/png">
         <img class="choice__image" src="images/index-mobile-feed@1x.png" srcset="images/index-mobile-feed@2x.png 2x" width="280" height="270" alt="изображение фирменной упаковки корма со вкусом курицы Кэт Энерджи Про ">
       </picture>
       <a class="choice__button button" href="#">Подобрать программу</a>
@@ -114,11 +113,15 @@
       </div>
       <div class="results__slider">
         <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/desktop-tablet-cat-before@1x.png 1x, images/desktop-tablet-cat-before@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="images/desktop-tablet-cat-before@1x.webp 1x, images/desktop-tablet-cat-before@2x.webp 2x" width="560" height="512" type="image/webp">
+          <source media="(min-width: 320px)" srcset="images/mobile-cat-before@1x.webp 1x, images/mobile-cat-before@2x.webp 2x" width="280" height="256" type="image/webp">
+          <source media="(min-width: 768px)" srcset="images/desktop-tablet-cat-before@1x.png 1x, images/desktop-tablet-cat-before@2x.png 2x" width="560" height="512" type="image/png">
           <img class="results__image-fat" src="images/mobile-cat-before@1x.png" srcset="images/mobile-cat-before@2x.png 2x" width="280" height="256" alt="изображение сидящего толстого кота">
         </picture>
         <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/desktop-tablet-cat-after@1x.png 1x, images/desktop-tablet-cat-after@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="images/desktop-tablet-cat-after@1x.webp 1x, images/desktop-tablet-cat-after@2x.webp  2x" width="560" height="512" type="image/webp">
+          <source media="(min-width: 320px)" srcset="images/mobile-cat-after@1x.webp 1x, images/mobile-cat-after@2x.webp 2x" width="280" height="256" type="image/webp">
+          <source media="(min-width: 768px)" srcset="images/desktop-tablet-cat-after@1x.png 1x, images/desktop-tablet-cat-after@2x.png 2x" width="560" height="512" type="image/png">
           <img class="results__image-slim" src="images/mobile-cat-after@1x.png" srcset="images/mobile-cat-after@2x.png 2x" width="280" height="256" alt="изображение сидящего похудевшего кота">
         </picture>
         <div class="divider">
@@ -134,9 +137,12 @@
       <div class="partnership__map-container">
         <h2 class="visually-hidden">Кэт Энерджи на Яндекс картах</h2>
         <picture>
-          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/index-desktop-map@1x.png 1x, images/index-desktop-map@2x.png 2x">
-          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/index-tablet-map@1x.png 1x, images/index-tablet-map@2x.png 2x">
-          <img class="partnership__image-map" src="images/index-mobile-map@1x.png" srcset="images/index-mobile-map@2x.png 2x" width="320" height="362" alt="Фрагмент Яндекс Карт с отметкой местонахождения Кэт Энерджи">
+          <source media="(min-width: 1440px)" srcset="images/desktop-map@1x.webp 1x, images/desktop-map@2x.webp 2x" width="1440" height="400" type="image/webp">
+          <source media="(min-width: 768px)" srcset="images/tablet-map@1x.webp 1x, images/tablet-map@2x.webp 2x" width="768" height="400" type="image/webp">
+          <source media="(min-width: 320px)" srcset="images/mobile-map@1x.webp 1x, images/mobile-map@2x.webp 2x" width="320" height="362" type="image/webp">
+          <source media="(min-width: 1440px)" srcset="images/desktop-map@1x.png 1x, images/desktop-map@2x.png 2x" width="1440" height="400" type="image/png">
+          <source media="(min-width: 768px)" srcset="images/tablet-map@1x.png 1x, images/tablet-map@2x.png 2x" width="768" height="400" type="image/png">
+          <img class="partnership__image-map" src="images/mobile-map@1x.png" srcset="images/mobile-map@2x.png 2x" width="320" height="362" alt="Фрагмент Яндекс Карт с отметкой местонахождения Кэт Энерджи">
         </picture>
         <div class="partnership__map"></div>
       </div>

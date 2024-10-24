@@ -1,7 +1,40 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/page.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/logo-text.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/button-toggle.scss";
+@import "./blocks/main-page.scss";
+@import "./blocks/choice.scss";
+@import "./blocks/button.scss";
+@import "./blocks/goals.scss";
+@import "./blocks/goals-card.scss";
+@import "./blocks/specification.scss";
+@import "./blocks/description.scss";
+@import "./blocks/title.scss";
+@import "./blocks/results.scss";
+@import "./blocks/result-card.scss";
+@import "./blocks/divider.scss";
+@import "./blocks/partnership.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/social.scss";
+@import "./blocks/creator.scss";
+@import "./blocks/catalog-page.scss";
+@import "./blocks/catalog-container.scss";
+@import "./blocks/catalog-card.scss";
+@import "./blocks/empty-card.scss";
+@import "./blocks/additional.scss";
+@import "./blocks/order-button.scss";
+@import "./blocks/additional-product.scss";
+@import "./blocks/order-all.scss";
+@import "./blocks/subscribe.scss";
+@import "./blocks/form.scss";
+

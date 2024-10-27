@@ -1,7 +1,11 @@
 .choice {
-  background: rgba(104, 183, 56, 0.85);
+  background-color: rgba(104, 183, 56, 0.85);
   color: #ffffff;
   text-align: center;
+
+  @media (min-width: 768px) {
+    background-color: #ffffff;
+  }
 }
 
 .choice__text {

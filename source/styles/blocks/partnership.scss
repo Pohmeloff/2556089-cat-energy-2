@@ -1,14 +1,8 @@
-.partnership__text {
-  color: #111111;
-}
-
 .partnership__address {
-  font-family: $secondary-font;
   font-size: 14px;
-  line-height: 20px;
-  color: #444444;
+  color: $color-text;
 }
 
 .partnership__info--catalog {
-  background-color: #f2f2f2;
+  background-color: $neutral-color-1;
 }

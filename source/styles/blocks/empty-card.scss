@@ -2,20 +2,13 @@
   text-transform: uppercase;
 }
 
-.empty-card__title {
-  color: #111111;
-  font-size: inherit;
-  font-weight: inherit;
-}
-
 .empty-card__text {
-  font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $color-text;
 }
 
 .empty-card__button {
-  background-color: #f2f2f2;
-  color: #444444;
+  background-color: $neutral-color-1;
+  color: $color-text;
 }

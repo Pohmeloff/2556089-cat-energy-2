@@ -1,9 +1,7 @@
 .results {
-  background-color: #eaeaea;
+  background-color: $neutral-color-2;
 }
 
-.results__title {
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: inherit;
+.results__list {
+  font-family: $secondary-font;
 }

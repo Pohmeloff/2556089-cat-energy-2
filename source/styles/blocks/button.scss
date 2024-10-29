@@ -1,7 +1,8 @@
 .button {
   display: block;
-  background-color: #68b738;
-  color: #ffffff;
+  font-family: $secondary-font;
+  background-color: $accent;
+  color: $secondary-color;
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;

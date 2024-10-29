@@ -1,7 +1,7 @@
 .result-card__text {
-  font-family: $secondary-font;
   font-size: 12px;
   line-height: 12px;
+  color: $color-text;
 }
 
 .result-card__number {
@@ -10,6 +10,7 @@
 }
 
 .results__item--cost {
+
   font-size: 14px;
   line-height: 20px;
 }

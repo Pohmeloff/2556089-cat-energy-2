@@ -1,15 +1,16 @@
 .choice {
   background-color: rgba(104, 183, 56, 0.85);
-  color: #ffffff;
+  color: $secondary-color;
   text-align: center;
 
   @media (min-width: 768px) {
-    background-color: #ffffff;
+    background-color: $secondary-color;
     color: inherit;
   }
 }
 
 .choice__text {
+  font-family: $secondary-font;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;

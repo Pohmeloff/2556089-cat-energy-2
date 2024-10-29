@@ -1,0 +1,15 @@
+.caption {
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: inherit;
+  color: $color-caption;
+  text-transform: uppercase;
+}
+
+.caption--dark {
+  color: $color-caption-dark;
+}
+
+.caption--low {
+  line-height: 16px;
+}

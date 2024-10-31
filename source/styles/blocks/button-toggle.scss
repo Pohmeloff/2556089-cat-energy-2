@@ -1,0 +1,11 @@
+.button-toggle {
+  width: 24px;
+  height: 24px;
+  background-color: #00ffff;
+  background-image: url("../../icons/stack.svg#toggle-mobile");
+  cursor: pointer;
+}
+
+.button-toggle:hover {
+  opacity: 0.6;
+}

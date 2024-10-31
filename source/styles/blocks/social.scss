@@ -1,8 +1,13 @@
 .social {
   list-style-type: none;
-  color: inherit;
 }
 
 .social__link {
+  display: inline-block;
+  width: 28px;
+  height: 20px;
   color: inherit;
+  mask-image: url("../../icons/stack.svg#icon-vkontakte");
+  mask-position: center;
+  background-color: $accent;
 }

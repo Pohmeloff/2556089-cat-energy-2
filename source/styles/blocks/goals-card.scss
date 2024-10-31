@@ -10,3 +10,17 @@
   color: $primary-color;
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  .goals-card__image {
+    width: 200px;
+    height: 211px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .goals-card__image {
+    width: 100px;
+    height: 106px;
+  }
+}

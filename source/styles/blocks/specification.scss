@@ -1,3 +1,55 @@
 .specification__list {
   list-style: none;
 }
+
+.specification__item--healthy {
+  position: relative;
+}
+
+.specification__item--healthy::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 50px;
+  background-color: $accent;
+  background-image: url("../../icons/stack.svg#leaf-healthy");
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.specification__item--fast::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 50px;
+  background-color: $accent;
+  background-image: url("../../icons/stack.svg#cook-fast");
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.specification__item--eat::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 50px;
+  background-color: $accent;
+  background-image: url("../../icons/stack.svg#fork-spoon-eat");
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.specification__item--effect::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 50px;
+  background-color: $accent;
+  background-image: url("../../icons/stack.svg#time-effect");
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

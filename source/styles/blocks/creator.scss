@@ -1,3 +1,25 @@
 .creator__text {
   color: $color-text;
 }
+
+.creator__link {
+  display: block;
+  width: 27px;
+  height: 34px;
+}
+
+.creator__link--image {
+  mask-image: url("../../icons/stack.svg#logo-academy-html");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: $color-footer-icons;
+}
+
+.creator__link--image:hover,
+.creator__link--image:focus {
+  background-color: $accent;
+}
+
+.creator__link:active {
+  opacity: 0.3;
+}

@@ -2,8 +2,8 @@
   font-size: 14px;
   line-height: 18px;
   color: $color-text;
-}
 
-.text--low {
-  line-height: 14px;
+  &--low {
+    line-height: 14px;
+  }
 }

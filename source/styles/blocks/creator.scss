@@ -13,11 +13,11 @@
   mask-repeat: no-repeat;
   mask-position: center;
   background-color: $color-footer-icons;
-}
 
-.creator__link--image:hover,
-.creator__link--image:focus {
-  background-color: $accent;
+  &:hover,
+  &:focus {
+    background-color: $accent;
+  }
 }
 
 .creator__link:active {

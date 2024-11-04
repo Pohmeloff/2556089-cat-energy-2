@@ -18,7 +18,7 @@
 .choice__container {
   width: 320px;
   height: 302px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background-mobile-cat@1x.jpg");
+  background-image: linear-gradient($accent-transparent, $accent-transparent), url("../../images/background-mobile-cat@1x.jpg");
 
   @media (min-width: 768px) {
     background-image: none;
@@ -27,7 +27,7 @@
   @media (min-width: 1440px) {
     width: 720px;
     height: 694px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background-mobile-cat@1x.jpg");
+    background-image: linear-gradient($accent-transparent, $accent-transparent), url("../../images/background-mobile-cat@1x.jpg");
     background-size: contain;
     background-repeat: no-repeat;
   }

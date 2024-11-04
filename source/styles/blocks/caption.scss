@@ -4,12 +4,12 @@
   font-weight: inherit;
   color: $color-caption;
   text-transform: uppercase;
-}
 
-.caption--dark {
-  color: $color-caption-dark;
-}
+  &--dark {
+    color: $color-caption-dark;
+  }
 
-.caption--low {
-  line-height: 16px;
+  &--low {
+    line-height: 16px;
+  }
 }

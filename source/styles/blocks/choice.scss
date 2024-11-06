@@ -2,7 +2,7 @@
   color: $secondary-color;
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     background-color: $secondary-color;
     color: inherit;
   }
@@ -20,11 +20,11 @@
   height: 302px;
   background-image: linear-gradient($accent-transparent, $accent-transparent), url("../../images/background-mobile-cat@1x.jpg");
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     background-image: none;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     width: 720px;
     height: 694px;
     background-image: linear-gradient($accent-transparent, $accent-transparent), url("../../images/background-mobile-cat@1x.jpg");

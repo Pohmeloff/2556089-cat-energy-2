@@ -11,14 +11,14 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .goals-card__image {
     width: 200px;
     height: 211px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .goals-card__image {
     width: 100px;
     height: 106px;

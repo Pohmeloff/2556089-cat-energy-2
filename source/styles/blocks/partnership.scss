@@ -7,19 +7,7 @@
   background-color: $neutral-color-1;
 }
 
-.partnership__map-container {
-  position: relative;
-}
-
-.partnership__map-container::before {
-  position: absolute;
-  content: "";
-  width: 57px;
-  height: 53px;
-  background-image: url("../../icons/stack.svg#map-cursor-logo");
-  background-repeat: no-repeat;
-  background-position: center;
-  left: 50%;
-  bottom: 50%;
-  transform: translateX(-50%);
+.partnership__image-map {
+  width: 100%;
+  object-fit: cover;
 }

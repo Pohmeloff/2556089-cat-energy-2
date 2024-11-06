@@ -4,8 +4,24 @@
   line-height: 20px;
   text-transform: uppercase;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $accent;
+  }
 }
+
 
 .main-nav__link {
   color: $primary-color;
+
+  @media (min-width: $desktop-width) {
+    color: $secondary-color;
+  }
 }

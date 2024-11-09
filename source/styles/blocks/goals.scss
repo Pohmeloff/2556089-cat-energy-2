@@ -1,7 +1,13 @@
-.goals {
-  background-color: $neutral-color-1;
-}
-
 .goals__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+
+  &nth:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+.goals__item {
+  background-color: $neutral-color-1;
 }

@@ -1,55 +1,85 @@
 .specification__list {
+  display: grid;
+  padding: 0 20px;
+  grid-template-columns: 60px 200px;
+  grid-template-rows: repeat(4, 60px);
+  gap: 24px 20px;
   list-style: none;
-}
-
-.specification__item--healthy {
   position: relative;
 }
 
-.specification__item--healthy::before {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 50px;
-  background-color: $accent;
-  background-image: url("../../icons/stack.svg#leaf-healthy");
-  background-size: 30px 32px;
-  background-repeat: no-repeat;
-  background-position: center;
+.specification__item--healthy {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $accent;
+    background-image: url("../../icons/stack.svg#leaf-healthy");
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    left: -80px;
+    top: -251px;
+  }
 }
 
-.specification__item--fast::before {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 50px;
-  background-color: $accent;
-  background-image: url("../../icons/stack.svg#cook-fast");
-  background-size: 30px 32px;
-  background-repeat: no-repeat;
-  background-position: center;
+.specification__item--fast {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $accent;
+    background-image: url("../../icons/stack.svg#cook-fast");
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 20px;
+  }
 }
 
-.specification__item--eat::before {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 50px;
-  background-color: $accent;
-  background-image: url("../../icons/stack.svg#fork-spoon-eat");
-  background-size: 30px 32px;
-  background-repeat: no-repeat;
-  background-position: center;
+.specification__item--eat {
+
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+
+  ::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $accent;
+    background-image: url("../../icons/stack.svg#fork-spoon-eat");
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 20px;
+  }
 }
 
-.specification__item--effect::before {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 50px;
-  background-color: $accent;
-  background-image: url("../../icons/stack.svg#time-effect");
-  background-size: 30px 32px;
-  background-repeat: no-repeat;
-  background-position: center;
+.specification__item--effect {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $accent;
+    background-image: url("../../icons/stack.svg#time-effect");
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 20px;
+  }
 }

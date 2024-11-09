@@ -1,3 +1,19 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: $neutral-color-1;
+}
+
+.page-footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.page-footer__creator {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }

@@ -1,10 +1,22 @@
-.page-header {
-  padding: 0 20px;
-}
-
 .page-header__wrapper {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 13px 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    gap: 13px;
+    padding: 25px 34px 0 30px;
+  }
+}
+
+.page-header__link-text {
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
 }

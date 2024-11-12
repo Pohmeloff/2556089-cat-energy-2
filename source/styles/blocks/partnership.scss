@@ -3,6 +3,16 @@
   color: $color-text;
 }
 
+.partnership__info {
+  display: flex;
+  padding: 26px 0;
+
+  @media (min-width: 768px) {
+    padding: 60px 70px;
+    gap: 308px;
+  }
+}
+
 .partnership__info--catalog {
   background-color: $neutral-color-1;
 }

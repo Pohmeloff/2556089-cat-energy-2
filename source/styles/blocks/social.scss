@@ -7,16 +7,6 @@
   width: 28px;
   height: 22px;
 
-  &:hover,
-  :focus {
-    background-color: $accent;
-  }
-
-  &:active {
-    background-color: $accent;
-    opacity: 0.3;
-  }
-
   &--vk {
     mask-image: url("../../icons/stack.svg#icon-vkontakte");
     mask-position: center;
@@ -36,5 +26,15 @@
     mask-position: center;
     mask-repeat: no-repeat;
     background-color: $color-footer-icons;
+  }
+
+  &:hover,
+  :focus {
+    background-color: $accent;
+  }
+
+  &:active {
+    background-color: $accent;
+    opacity: 0.3;
   }
 }

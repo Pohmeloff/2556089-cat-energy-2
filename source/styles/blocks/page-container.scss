@@ -1,4 +1,15 @@
 .page-container {
   display: flex;
   flex-direction: column;
+  width: 280px;
+  margin-inline: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
+

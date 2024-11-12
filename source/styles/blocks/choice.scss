@@ -1,6 +1,9 @@
 .choice {
   color: $secondary-color;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     background-color: $secondary-color;
@@ -13,6 +16,12 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .choice__container {
@@ -21,9 +30,13 @@
   background-image: linear-gradient($accent-transparent, $accent-transparent), url("../../images/background-mobile-cat@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 135px;
 
   @media (min-width: $tablet-width) {
     background-image: none;
+    height: auto;
+    text-align: left;
+    padding-left: 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,4 +46,19 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
+}
+
+.choice__button {
+  padding: 10px 64px;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+  }
+}
+
+.choice__image {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
 }

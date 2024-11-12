@@ -1,10 +1,27 @@
+.specification {
+  margin-bottom: 49px;
+}
+
+.specification__title {
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 32px;
+  }
+}
+
 .specification__list {
   display: grid;
-  padding: 0 20px;
   grid-template-columns: 60px 200px;
   grid-template-rows: repeat(4, 60px);
   gap: 24px 20px;
   list-style: none;
+  margin: 0;
+  padding: 0;
   position: relative;
 }
 
@@ -43,12 +60,11 @@
     background-size: 30px 32px;
     background-repeat: no-repeat;
     background-position: center;
-    left: 20px;
+    left: 0;
   }
 }
 
 .specification__item--eat {
-
   grid-column: 2 / 3;
   grid-row: 3 / 4;
 
@@ -62,7 +78,7 @@
     background-size: 30px 32px;
     background-repeat: no-repeat;
     background-position: center;
-    left: 20px;
+    left: 0;
   }
 }
 
@@ -80,6 +96,6 @@
     background-size: 30px 32px;
     background-repeat: no-repeat;
     background-position: center;
-    left: 20px;
+    left: 0;
   }
 }

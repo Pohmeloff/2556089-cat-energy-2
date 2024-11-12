@@ -1,3 +1,34 @@
+.catalog-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-page__title {
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 84px;
+  }
+}
+
 .catalog-page__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px 80px 63px 80px;
+  }
+}
+
+.catalog-page__item {
+  padding: 20px 0 25px;
 }

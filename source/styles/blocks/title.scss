@@ -5,7 +5,16 @@
   font-weight: inherit;
   margin: 0;
 
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   &--high {
     line-height: 40px;
+
+    @media (min-width: $tablet-width) {
+      line-height: 60px;
+    }
   }
 }

@@ -5,10 +5,24 @@
   text-transform: uppercase;
   color: $color-text;
   border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+
+    @media (min-width: $desktop-width) {
+      width: 496px;
+    }
+  }
 }
 
 .form__button {
   font-size: 20px;
   line-height: 26px;
   text-align: center;
+  padding: 15px 82px;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 72px;
+  }
 }
+

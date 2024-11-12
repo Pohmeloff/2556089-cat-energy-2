@@ -1,17 +1,44 @@
+.page-header {
+  position: relative;
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 74px;
+  }
+
+  @media (max-width: 767px) {
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      background-color: #d9d9d9;
+      top: 84px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 20px;
+  padding: 13px 0 15px;
 
   @media (min-width: $desktop-width) {
-    padding: 55px 110px 0;
+    padding: 55px 0 0;
   }
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
     gap: 13px;
-    padding: 25px 34px 0 30px;
+    padding: 25px 0 0;
   }
 }
 

@@ -11,6 +11,10 @@
   }
 }
 
+.choice__title {
+  margin-bottom: 25px;
+}
+
 .choice__text {
   font-family: $secondary-font;
   font-size: 14px;
@@ -37,6 +41,7 @@
     height: auto;
     text-align: left;
     padding-left: 90px;
+    margin-bottom: 630px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,16 +54,24 @@
 }
 
 .choice__button {
-  padding: 10px 64px;
-
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: auto;
     padding: 14px 26px;
+    position: absolute;
+    top: 230px;
+    margin-left: 90px;
   }
 }
 
 .choice__image {
   position: absolute;
-  bottom: 8%;
+  top: 167px;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    top: 201px;
+  }
 }

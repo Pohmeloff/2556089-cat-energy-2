@@ -7,4 +7,9 @@
   &--low {
     line-height: 14px;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

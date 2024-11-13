@@ -8,12 +8,13 @@
 
   @media (min-width: $tablet-width) {
     width: 376px;
+  }
 
-    @media (min-width: $desktop-width) {
-      width: 496px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 496px;
   }
 }
+
 
 .form__button {
   font-size: 20px;
@@ -26,4 +27,3 @@
     padding: 15px 72px;
   }
 }
-

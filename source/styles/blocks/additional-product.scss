@@ -1,7 +1,35 @@
+.additional-product {
+  display: grid;
+  row-gap: 13px;
+  grid-template-columns: 1fr;
+  padding: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .additional-product__title {
   font-size: 16px;
   line-height: 16px;
   font-weight: inherit;
   color: $color-caption;
   text-transform: uppercase;
+}
+
+.additional-product__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    justify-content: right;
+    gap: 39px;
+  }
 }

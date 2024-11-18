@@ -35,7 +35,7 @@
       width: 100%;
       height: 1px;
       position: absolute;
-      background-color: #d9d9d9;
+      background-color: $color-index-divider;
       top: 84px;
       left: 50%;
       transform: translateX(-50%);
@@ -47,7 +47,7 @@
       width: 100%;
       height: 1px;
       position: absolute;
-      background-color: #d9d9d9;
+      background-color: $color-index-divider;
       bottom: 94px;
       left: 50%;
       transform: translateX(-50%);

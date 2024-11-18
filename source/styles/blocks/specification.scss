@@ -6,11 +6,7 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 72px;
   }
 }
 
@@ -31,6 +27,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 37px 137px;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,9 +52,19 @@
     left: 0;
   }
 
+  &::after {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 124px;
+    z-index: -1;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 80px;
-    padding: 111px 0 0;
+    padding: 111px 0 57px;
 
     &::before {
       width: 80px;
@@ -71,11 +78,28 @@
   &::before {
     background-image: url("../../icons/stack.svg#leaf-healthy");
   }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      width: 71px;
+      height: 227px;
+      background-image: url("../../images/number-1.svg");
+    }
+  }
 }
 
 .specification__item--fast {
   &::before {
     background-image: url("../../icons/stack.svg#cook-fast");
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      width: 113px;
+      height: 229px;
+      background-image: url("../../images/number-2.svg");
+      background-position: center;
+    }
   }
 }
 
@@ -83,10 +107,29 @@
   &::before {
     background-image: url("../../icons/stack.svg#fork-spoon-eat");
   }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      width: 112px;
+      height: 232px;
+      background-image: url("../../images/number-3.svg");
+      background-position: center;
+    }
+  }
 }
 
 .specification__item--effect {
   &::before {
     background-image: url("../../icons/stack.svg#time-effect");
   }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      width: 113px;
+      height: 229px;
+      background-image: url("../../images/number-4.svg");
+      background-position: center;
+    }
+  }
 }
+

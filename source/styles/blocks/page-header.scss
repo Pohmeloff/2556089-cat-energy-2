@@ -1,13 +1,13 @@
 .page-header {
   position: relative;
-  margin-bottom: 27px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 74px;
+    margin-bottom: 110px;
   }
 
   @media (max-width: 767px) {
@@ -17,8 +17,8 @@
       width: 100%;
       height: 1px;
       position: absolute;
-      background-color: #d9d9d9;
-      top: 84px;
+      background-color: $color-index-divider;
+      top: 66px;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -27,6 +27,7 @@
 
 .page-header__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 13px 0 15px;
@@ -42,7 +43,17 @@
   }
 }
 
+.page-header__link-cat {
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
 .page-header__link-text {
+  &:hover {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     margin-right: auto;
   }

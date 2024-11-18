@@ -2,6 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 78px 20px 25px;
+  gap: 8px;
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+    padding: 160px 37px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 26px;
+    padding-top: 150px;
+  }
 }
 
 .empty-card__link {
@@ -12,9 +24,28 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-text;
+  margin: 0 0 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 64px;
+  }
 }
 
 .empty-card__button {
   background-color: $neutral-color-1;
   color: $color-text;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 1);
+  }
 }
+

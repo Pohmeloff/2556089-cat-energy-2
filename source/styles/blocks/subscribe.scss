@@ -2,6 +2,12 @@
   font-family: $secondary-font;
   line-height: 24px;
   text-align: center;
+  margin: 0 0 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .subscribe__form {
@@ -14,5 +20,37 @@
     flex-direction: row;
     gap: 0;
     justify-content: center;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 104px;
+  }
+}
+
+.subscribe__subtitle {
+  padding-left: 20px;
+  margin-bottom: 32px;
+  position: relative;
+  width: fit-content;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 2px;
+    background-color: $accent;
+    top: 12px;
+    left: calc(100% + 40px);
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
   }
 }

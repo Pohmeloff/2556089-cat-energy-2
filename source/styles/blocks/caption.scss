@@ -6,11 +6,24 @@
   text-transform: uppercase;
   margin: 0;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
   &--dark {
     color: $color-caption-dark;
   }
 
   &--low {
     line-height: 16px;
+
+    @media (min-width: $tablet-width) {
+      line-height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 285px;
+    }
   }
 }

@@ -10,8 +10,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 0;
-    grid-template-columns: repeat(4, 1fr);
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
   }
 }
 
@@ -23,6 +26,7 @@
   text-transform: uppercase;
 }
 
+
 .additional-product__list {
   display: flex;
   justify-content: space-between;
@@ -31,5 +35,10 @@
   @media (min-width: $tablet-width) {
     justify-content: right;
     gap: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 275px;
+    justify-content: space-between;
   }
 }

@@ -97,9 +97,9 @@
       </ul>
     </section>
     <section class="results">
-      <div class="layout">
-        <h2 class="results__title title title--high">Живой пример</h2>
+      <div class="results__wrapper layout">
         <div class="results__container">
+          <h2 class="results__title title title--high">Живой пример</h2>
           <p class="results__text text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <dl class="results__list">
             <div class="results__list-wrapper">
@@ -118,21 +118,25 @@
             </div>
           </dl>
         </div>
-        <div class="results__slider">
+        <div class="results__slider" style="--curtain-place: 0.5;">
           <picture>
             <source media="(min-width: 768px)" srcset="images/desktop-tablet-cat-before@1x.webp 1x, images/desktop-tablet-cat-before@2x.webp 2x" width="560" height="512" type="image/webp">
             <source srcset="images/mobile-cat-before@1x.webp 1x, images/mobile-cat-before@2x.webp 2x" width="280" height="256" type="image/webp">
             <source media="(min-width: 768px)" srcset="images/desktop-tablet-cat-before@1x.png 1x, images/desktop-tablet-cat-before@2x.png 2x" width="560" height="512" type="image/png">
-            <img class="results__image-fat results__image-fat--before " src="images/mobile-cat-before@1x.png" srcset="images/mobile-cat-before@2x.png 2x" width="280" height="256" alt="изображение сидящего толстого кота">
+            <img class="results__image results__image--before " src="images/mobile-cat-before@1x.png" srcset="images/mobile-cat-before@2x.png 2x" width="280" height="256" alt="изображение сидящего толстого кота">
           </picture>
+          <div class="results__divider">
+            <button class="results__thumb" type="button">
+              <span class="visually-hidden">Ползунок слайдера</span>
+            </button>
+          </div>
           <picture>
             <source media="(min-width: 768px)" srcset="images/desktop-tablet-cat-after@1x.webp 1x, images/desktop-tablet-cat-after@2x.webp 2x" width="560" height="512" type="image/webp">
             <source media="(min-width: 320px)" srcset="images/mobile-cat-after@1x.webp 1x, images/mobile-cat-after@2x.webp 2x" width="280" height="256" type="image/webp">
             <source media="(min-width: 768px)" srcset="images/desktop-tablet-cat-after@1x.png 1x, images/desktop-tablet-cat-after@2x.png 2x" width="560" height="512" type="image/png">
-            <img class="results__image-slim results__image-slim--after" src="images/mobile-cat-after@1x.png" srcset="images/mobile-cat-after@2x.png 2x" width="280" height="256" alt="изображение сидящего похудевшего кота">
+            <img class="results__image results__image--after" src="images/mobile-cat-after@1x.png" srcset="images/mobile-cat-after@2x.png 2x" width="280" height="256" alt="изображение сидящего похудевшего кота">
           </picture>
-          <div class="divider">
-          </div>
+
         </div>
       </div>
     </section>

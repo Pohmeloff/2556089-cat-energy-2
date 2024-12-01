@@ -30,10 +30,11 @@
   padding: 0;
   list-style-type: none;
   flex-grow: 1;
+  border-bottom: 1px solid $color-catalog-divider-2;
 }
 
 .additional__item {
-  border: 1px solid $color-catalog-divider-2;
+  border-top: 1px solid $color-catalog-divider-2;
 }
 
 .additional__text {

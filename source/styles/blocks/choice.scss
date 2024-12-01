@@ -1,23 +1,51 @@
 .choice {
   color: $secondary-color;
   text-align: center;
-  display: flex;
-  flex-direction: column;
   position: relative;
   margin-bottom: 20px;
 
+  @media (max-width: 767px) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      height: 302px;
+      background-image: linear-gradient($accent-transparent, $accent-transparent), url("../../images/background-mobile-cat@1x.jpg"), linear-gradient(to top right, #525357, #3c3c3f);
+      left: 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    background-color: $secondary-color;
     color: inherit;
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 694px;
+      background-image: linear-gradient($accent-transparent, $accent-transparent), url("../../images/background-mobile-cat@1x.jpg"), linear-gradient(to top right, #525357, #3c3c3f);
+      right: 0;
+      top: -200px;
+      background-position: left;
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
 }
+
 
 .choice__title {
   margin: 27 0 25px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 40px;
+    margin: 0 0 40px 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,33 +58,23 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-left: 80px;
   }
 }
 
 .choice__container {
-  width: 100%;
-  height: 302px;
-  background-image: linear-gradient($accent-transparent, $accent-transparent), url("../../images/background-mobile-cat@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 135px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     background-image: none;
     height: auto;
     text-align: left;
-    padding-left: 90px;
-    margin-bottom: 630px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 80px;
-    margin-bottom: 372px;
   }
 }
 
@@ -68,19 +86,13 @@
     padding: 14px 26px;
     position: absolute;
     top: 230px;
-    margin-left: 90px;
+    margin-left: 80px;
   }
 }
 
 .choice__image {
-  position: absolute;
-  top: 167px;
-  left: 50%;
-  transform: translateX(-50%);
 
-  @media (min-width: $tablet-width) {
-    top: 201px;
-  }
+  margin-bottom: 3px;
 
   @media (min-width: $desktop-width) {
     top: -81px;

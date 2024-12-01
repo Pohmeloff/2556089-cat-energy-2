@@ -7,7 +7,6 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: none;
 
 
   @media (min-width: $tablet-width) {
@@ -15,18 +14,42 @@
     gap: 33px;
     font-size: 18px;
     line-height: 24px;
+    position: static;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $accent;
     font-size: 20px;
     line-height: 30px;
   }
 }
 
+.main-nav__item {
+  @media (max-width: 767px) {
+    border-bottom: 1px solid $color-index-divider;
+  }
+}
+
+.main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
 .main-nav__link {
   color: $primary-color;
-  padding-bottom: 10px;
+  display: block;
+  padding: 22px 24px;
 
   &:hover {
     opacity: 0.6;
@@ -36,24 +59,66 @@
     opacity: 0.3;
   }
 
+  @media (min-width: $tablet-width) {
+    padding: 0 0 10px;
+  }
+
   @media (min-width: $desktop-width) {
-    color: $secondary-color;
+    color: $primary-color;
+    padding-bottom: 10px;
   }
 }
 
-.main-nav__link--current {
-  position: relative;
+.main-nav__list--white .main-nav__link {
+  @media (min-width: $desktop-width) {
+    color: $secondary-color;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: $accent;
-    bottom: 0;
-
-    @media (min-width: $desktop-width) {
+    &::before {
       background-color: $secondary-color;
     }
   }
 }
+
+.main-nav__link--current {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $accent;
+      bottom: 0;
+    }
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-image: url("../../icons/stack.svg#burger");
+}
+
+.main-nav--opened .main-nav__toggle {
+  background-image: url("../../icons/stack.svg#cross-close");
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    position: static;
+  }
+}
+
+.main-nav--opened .main-nav__list {
+  display: block;
+  position: absolute;
+  background-color: $secondary-color;
+  min-width: 100vw;
+  border-top: 1px solid $color-index-divider;
+  top: 63px;
+  left: 0;
+  z-index: 10;
+}
+

@@ -16,4 +16,64 @@
 
 .results__list {
   font-family: $secondary-font;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+    flex-direction: row;
+    gap: 166px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.results__list-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+  }
+}
+
+.results__text {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.results__item--cost {
+
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+
+  :where(dd) {
+    margin: 0;
+    padding-left: 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    flex-direction: column;
+
+    :where(dd) {
+      margin: 0;
+      padding-left: 0;
+      text-align: right;
+    }
+  }
 }

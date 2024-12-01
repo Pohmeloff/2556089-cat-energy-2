@@ -6,9 +6,23 @@ body {
   line-height: 20px;
   background-color: $secondary-color;
   color: $primary-color;
-  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  :where(picture,
+source) {
+    display: contents;
+  }
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  object-fit: contain;
+  height: auto;
 }

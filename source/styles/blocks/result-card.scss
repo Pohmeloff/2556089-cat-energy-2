@@ -1,16 +1,45 @@
+.result-card {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 8px;
+  min-width: 124px;
+  border: 1px solid $color-catalog-divider-2;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+  }
+}
+
 .result-card__text {
+  font-family: $primary-font;
   font-size: 12px;
   line-height: 12px;
+  max-width: 59px;
+  text-align: center;
+  margin-bottom: -17px;
+  width: fit-content;
   color: $color-text;
+  background-color: $neutral-color-2;
+  box-shadow: 6px 0 $neutral-color-2, -6px 0 $neutral-color-2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    max-width: none;
+    margin-bottom: -5px;
+  }
 }
 
 .result-card__number {
   font-size: 24px;
   line-height: 24px;
-}
+  margin: 14px 0 0;
+  text-transform: uppercase;
 
-.results__item--cost {
-
-  font-size: 14px;
-  line-height: 20px;
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }

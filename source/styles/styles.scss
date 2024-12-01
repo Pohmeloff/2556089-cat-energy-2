@@ -6,6 +6,7 @@
 @import "./common/visually-hidden.scss";
 
 /* BLOCKS */
+@import "./blocks/layout.scss";
 @import "./blocks/page-container.scss";
 @import "./blocks/title.scss";
 @import "./blocks/page-footer.scss";
@@ -17,7 +18,6 @@
 @import "./blocks/text.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/form.scss";
-@import "./blocks/button-toggle.scss";
 @import "./blocks/subscribe.scss";
 @import "./blocks/choice.scss";
 @import "./blocks/caption.scss";

@@ -1,5 +1,15 @@
 .specification {
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 47px;
+    border-bottom: 1px solid $color-index-divider;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .specification__title {
@@ -26,7 +36,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px 137px;
+    gap: 90px 137px;
   }
 
   @media (min-width: $desktop-width) {

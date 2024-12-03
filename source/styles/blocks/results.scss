@@ -110,6 +110,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     flex-direction: column;
+    gap: 9px;
 
     :where(dd) {
       margin: 0;

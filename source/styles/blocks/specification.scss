@@ -23,25 +23,26 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 37px 137px;
+    gap: 40px 137px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
   }
 }
 
 .specification__item {
+  display: flex;
+  gap: 20px;
   position: relative;
-  padding: 2px 0 4px 80px;
-  min-height: 60px;
+  padding: 2px 0 4px;
+  counter-increment: counter 1;
 
   &::before {
-    position: absolute;
     content: "";
     width: 60px;
     height: 60px;
@@ -49,27 +50,30 @@
     background-size: 30px 32px;
     background-repeat: no-repeat;
     background-position: center;
-    left: 0;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    background-repeat: no-repeat;
-    background-position: center;
-    top: 0;
-    left: 124px;
-    z-index: -1;
+    flex-shrink: 0;
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 80px;
-    padding: 111px 0 57px;
+    flex-direction: column;
+    gap: 31px;
+    padding-bottom: 40px;
 
     &::before {
       width: 80px;
       height: 80px;
-      top: 0;
+    }
+
+    &::after {
+      content: counter(counter);
+      font-family: $secondary-font;
+      color: $neutral-color-1;
+      font-size: 280px;
+      font-weight: 400;
+      line-height: 280px;
+      position: absolute;
+      z-index: -1;
+      top: -40px;
+      left: 113px;
     }
   }
 }
@@ -78,28 +82,11 @@
   &::before {
     background-image: url("../../icons/stack.svg#leaf-healthy");
   }
-
-  @media (min-width: $tablet-width) {
-    &::after {
-      width: 71px;
-      height: 227px;
-      background-image: url("../../images/number-1.svg");
-    }
-  }
 }
 
 .specification__item--fast {
   &::before {
     background-image: url("../../icons/stack.svg#cook-fast");
-  }
-
-  @media (min-width: $tablet-width) {
-    &::after {
-      width: 113px;
-      height: 229px;
-      background-image: url("../../images/number-2.svg");
-      background-position: center;
-    }
   }
 }
 
@@ -107,28 +94,11 @@
   &::before {
     background-image: url("../../icons/stack.svg#fork-spoon-eat");
   }
-
-  @media (min-width: $tablet-width) {
-    &::after {
-      width: 112px;
-      height: 232px;
-      background-image: url("../../images/number-3.svg");
-      background-position: center;
-    }
-  }
 }
 
 .specification__item--effect {
   &::before {
     background-image: url("../../icons/stack.svg#time-effect");
   }
-
-  @media (min-width: $tablet-width) {
-    &::after {
-      width: 113px;
-      height: 229px;
-      background-image: url("../../images/number-4.svg");
-      background-position: center;
-    }
-  }
 }
+

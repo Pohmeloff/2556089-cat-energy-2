@@ -3,10 +3,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
+    margin-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 110px;
+    margin-top: 55px;
   }
 }
 
@@ -17,14 +19,10 @@
   align-items: center;
   padding: 13px 0 15px;
 
-  @media (min-width: $desktop-width) {
-    padding: 55px 0 0;
-  }
-
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
     gap: 13px;
-    padding: 25px 0 0;
+    padding: 0;
   }
 }
 
@@ -42,4 +40,8 @@
   @media (min-width: $tablet-width) {
     margin-right: auto;
   }
+}
+
+.page-header__cat {
+  display: block;
 }

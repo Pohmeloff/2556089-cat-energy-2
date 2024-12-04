@@ -1,10 +1,15 @@
 .form__input {
   font-family: $secondary-font;
   font-size: 20px;
+  padding: 13px;
   line-height: 30px;
   text-transform: uppercase;
   color: $color-text;
   border: 1px solid #cdcdcd;
+
+  &::placeholder {
+    color: $color-text;
+  }
 
   @media (min-width: $tablet-width) {
     width: 376px;

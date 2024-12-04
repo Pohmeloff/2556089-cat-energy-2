@@ -67,18 +67,29 @@
   &::after {
     position: absolute;
     content: "";
-    width: 24px;
-    height: 12px;
+    width: 32px;
+    height: 10px;
     background-image: url("../../icons/stack.svg#arrow-right");
-    background-size: 24px 12px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     top: 3px;
-    left: 98px;
+    left: calc(100% + 15px);
+    background-position-x: -8px;
+    transition: background-position 0.2s ease;
   }
 
   &:active {
-    opacity: 0.3;
+    &::after {
+      opacity: 0.3;
+      background-position-x: 0;
+    }
+  }
+
+  &:hover {
+    &::after {
+      background-position-x: 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -88,7 +99,7 @@
 
     &::after {
       top: 10px;
-      left: 132px;
+      left: calc(100% + 25px);
     }
 
     @media (min-width: $desktop-width) {

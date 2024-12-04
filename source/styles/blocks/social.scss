@@ -4,36 +4,37 @@
 
 .social__link {
   display: block;
-  width: 28px;
-  height: 22px;
 
-  &--vk {
+
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    mask-position: center;
+    mask-size: 27px 18px;
+    mask-repeat: no-repeat;
+    background-color: $color-footer-icons;
+  }
+
+  &--vk::before {
     mask-image: url("../../icons/stack.svg#icon-vkontakte");
-    mask-position: center;
-    mask-repeat: no-repeat;
-    background-color: $color-footer-icons;
   }
 
-  &--youtube {
+  &--youtube::before {
     mask-image: url("../../icons/stack.svg#icon-youtube");
-    mask-position: center;
-    mask-repeat: no-repeat;
-    background-color: $color-footer-icons;
   }
 
-  &--telegram {
+  &--telegram::before {
     mask-image: url("../../icons/stack.svg#icon-telegram");
-    mask-position: center;
-    mask-repeat: no-repeat;
-    background-color: $color-footer-icons;
   }
 
-  &:hover,
-  :focus {
+  &:hover::before,
+  &:focus::before {
     background-color: $accent;
   }
 
-  &:active {
+  &:active::before {
     background-color: $accent;
     opacity: 0.3;
   }

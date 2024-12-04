@@ -10,7 +10,10 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
+  <script src="scripts/slider.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -291,7 +294,17 @@
         <address class="partnership__address"><span>ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8</span> Санкт-Петербург</address>
       </div>
       <div class="partnership__map-container">
-        <h2 class="visually-hidden">Кэт Энерджи на Гугл картах</h2>
+        <h2 class="visually-hidden">Кэт Энерджи на Яндекс картах</h2>
+        <div class="location-image-wrapper">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/desktop-map@1x.webp 1x, images/desktop-map@2x.webp 2x" width="1440" height="400" type="image/webp">
+            <source media="(min-width: 768px)" srcset="images/tablet-map@1x.webp 1x, images/tablet-map@2x.webp 2x" width="768" height="400" type="image/webp">
+            <source srcset="images/mobile-map@1x.webp 1x, images/mobile-map@2x.webp 2x" width="320" height="362" type="image/webp">
+            <source media="(min-width: 1440px)" srcset="images/desktop-map@1x.png 1x, images/desktop-map@2x.png 2x" width="1440" height="400" type="image/png">
+            <source media="(min-width: 768px)" srcset="images/tablet-map@1x.png 1x, images/tablet-map@2x.png 2x" width="768" height="400" type="image/png">
+            <img class="partnership__image-map" src="images/mobile-map@1x.png" srcset="images/mobile-map@2x.png 2x" width="320" height="362" alt="Фрагмент Яндекс Карт с отметкой местонахождения Кэт Энерджи">
+          </picture>
+        </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.596909486151!2d30.3212738!3d59.9388306!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1732118310158!5m2!1sru!2s" width="100%" height="362" style="border:0;" allowfullscreen="" title="Офис компании по адресу ул. Большая
           Конюшенная, д. 19/8 Санкт-Петербург" loading=" lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="partnership__map"></div>

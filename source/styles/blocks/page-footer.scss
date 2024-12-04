@@ -60,14 +60,3 @@
     }
   }
 }
-
-.page-footer__creator {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-
-  @media (min-width: 768px) {
-    width: 168px;
-  }
-}

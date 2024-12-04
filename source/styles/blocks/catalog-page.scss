@@ -1,6 +1,13 @@
 .catalog-page {
   display: flex;
   flex-direction: column;
+  border-top: 1px solid $color-index-divider;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
 }
 
 .catalog-page__catalog {
@@ -16,7 +23,10 @@
 }
 
 .catalog-page__title {
+  width: 280px;
+  margin: 0 auto;
   margin-bottom: 41px;
+
 
   @media (min-width: $tablet-width) {
     margin-bottom: 174px;
@@ -45,13 +55,13 @@
 }
 
 .catalog-page__item {
-  border: 1px solid $color-catalog-divider-1;
+  border-top: 1px solid $color-catalog-divider-1;
 
   @media (min-width: $tablet-width) {
     border: none;
   }
 
   &--more {
-    border: 1px solid $color-catalog-divider-1;
+    border-bottom: 1px solid $color-catalog-divider-1;
   }
 }

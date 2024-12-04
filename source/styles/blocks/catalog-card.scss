@@ -8,6 +8,7 @@
   padding: 20px 20px 25px;
 
   @media (min-width: $tablet-width) {
+    width: unset;
     grid-template-columns: 1fr;
     background-color: $neutral-color-1;
     padding: 160px 37px 40px;

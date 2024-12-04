@@ -14,10 +14,12 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 74px;
+    width: 708px;
+    margin: 0 auto 74px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
     margin-bottom: 71px;
   }
 }
@@ -29,7 +31,8 @@
 
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 174px;
+    width: unset;
+    margin: 0 0 174px;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,11 +60,12 @@
 .catalog-page__item {
   border-top: 1px solid $color-catalog-divider-1;
 
-  @media (min-width: $tablet-width) {
-    border: none;
-  }
-
   &--more {
     border-bottom: 1px solid $color-catalog-divider-1;
   }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
+

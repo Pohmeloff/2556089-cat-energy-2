@@ -51,7 +51,8 @@
   display: block;
   padding: 22px 24px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 

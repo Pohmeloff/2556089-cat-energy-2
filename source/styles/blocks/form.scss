@@ -5,7 +5,21 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $color-text;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $neutral-color-3;
+
+  &:hover {
+    border-color: $color-catalog-divider-2;
+  }
+
+  &:focus {
+    border: 1px solid $color-text;
+    outline: 1px solid $color-text;
+  }
+
+  &--error {
+    border: 1px solid $error-color;
+    outline: 1px solid $error-color;
+  }
 
   &::placeholder {
     color: $color-text;

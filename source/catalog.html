@@ -26,7 +26,7 @@
           <img class="page-header__cat" src="images/mobile-logo-image.svg" width="33" height="38" alt="логотип сайта с разноцветным котом в костюме супергероя">
         </picture>
       </a>
-      <a class="page-header__link-text" href="index.html" aria-current="page">
+      <a class="page-header__link-text" href="index.html" aria-current="page" tabindex="-1">
         <img class="page-header__text logo-text" src="images/mobile-tablet-logo-text.svg" width="101" height="18" alt="логотип сайта в виде текста с надписью Сat Energy"></a>
       <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle button-toggle" type="button">
@@ -309,9 +309,9 @@
         <h3 class="partnership__caption caption caption--dark">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
         <address class="partnership__address"><span>ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8</span> Санкт-Петербург</address>
       </div>
-      <div class="partnership__map-container">
+      <div class="partnership__map">
         <h2 class="visually-hidden">Кэт Энерджи на Яндекс картах</h2>
-        <div class="location-image-wrapper">
+        <div class="partnership__image-map">
           <picture>
             <source media="(min-width: 1440px)" srcset="images/desktop-map@1x.webp 1x, images/desktop-map@2x.webp 2x" width="1440" height="400" type="image/webp">
             <source media="(min-width: 768px)" srcset="images/tablet-map@1x.webp 1x, images/tablet-map@2x.webp 2x" width="768" height="400" type="image/webp">
@@ -323,7 +323,6 @@
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.596909486151!2d30.3212738!3d59.9388306!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1732118310158!5m2!1sru!2s" width="100%" height="362" style="border:0;" allowfullscreen="" title="Офис компании по адресу ул. Большая
           Конюшенная, д. 19/8 Санкт-Петербург" loading=" lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="partnership__map"></div>
       </div>
     </section>
   </main>
@@ -346,10 +345,8 @@
         </li>
       </ul>
       <div class="page-footer__creator creator">
-        <a class="creator__link creator__link--text" aria-label="Перейти на сайт Академии html" href="https://htmlacademy.ru/">
+        <a class="creator__link" aria-label="Перейти на сайт Академии html" href="https://htmlacademy.ru/">
           <span class="creator__text">HTML&nbsp;Academy</span></a>
-        <a class="creator__link creator__link--image" href="https://htmlacademy.ru//">
-          <span class="visually-hidden">Логотип со ссылкой на сайт html academy.</span></a>
       </div>
     </section>
   </footer>

@@ -27,8 +27,13 @@
 }
 
 .page-header__link-cat {
-  &:hover {
-    opacity: 0.6;
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
   }
 }
 

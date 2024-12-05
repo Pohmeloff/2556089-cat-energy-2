@@ -56,7 +56,7 @@
   font-family: $secondary-font;
   display: flex;
   flex-direction: column;
-  gap: 55px;
+  gap: 35px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -133,6 +133,7 @@
   width: min(100%, 560px);
   aspect-ratio: 280/256;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 .results__image {

@@ -36,7 +36,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 90px 137px;
+    gap: 94px 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,7 +56,7 @@
     width: 60px;
     height: 60px;
     background-color: $accent;
-    background-size: 30px 32px;
+    background-size: 25px 28px;
     background-repeat: no-repeat;
     background-position: center;
     flex-shrink: 0;

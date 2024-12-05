@@ -6,6 +6,7 @@
   min-width: 124px;
   border: 1px solid $color-catalog-divider-2;
   border-radius: 3px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     min-width: 162px;

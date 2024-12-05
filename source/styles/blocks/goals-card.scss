@@ -126,6 +126,7 @@
     height: 200px;
     grid-column: 2 / 3;
     grid-row: 1 / 4;
+    margin: 16px 0 0;
   }
 
   @media (min-width: $desktop-width) {

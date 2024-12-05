@@ -71,10 +71,12 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 40px;
+    padding-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 414px;
+    padding-top: 110px;
   }
 }
 
@@ -108,12 +110,12 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     z-index: -1;
-    top: 201px;
+    top: 266px;
     left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    top: -81px;
+    top: 29px;
     left: 447px;
     transform: none;
   }

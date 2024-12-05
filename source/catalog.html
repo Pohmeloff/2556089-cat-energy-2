@@ -16,23 +16,27 @@
   <script src="scripts/slider.js" defer></script>
 </head>
 
-<body class="page__body">
+<body class="page__body nojs">
   <header class="page-header">
-    <div class="page-header__wrapper layout">
-      <a class="page-header__link-cat" href="index.html" aria-current="page">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/desktop-logo-image.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/tablet-logo-image.svg" width="60" height="50" type="image/svg+xml">
-          <img class="page-header__cat" src="images/mobile-logo-image.svg" width="33" height="38" alt="логотип сайта с разноцветным котом в костюме супергероя">
-        </picture>
-      </a>
-      <a class="page-header__link-text" href="index.html" aria-current="page" tabindex="-1">
-        <img class="page-header__text logo-text" src="images/mobile-tablet-logo-text.svg" width="101" height="18" alt="логотип сайта в виде текста с надписью Сat Energy"></a>
-      <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle button-toggle" type="button">
+    <div class="page-header__wrapper ">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__link-cat" href="index.html" aria-current="page">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/desktop-logo-image.svg" width="70" height="59" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/tablet-logo-image.svg" width="60" height="50" type="image/svg+xml">
+            <img class="page-header__cat" src="images/mobile-logo-image.svg" width="33" height="38" alt="логотип сайта с разноцветным котом в костюме супергероя">
+          </picture>
+        </a>
+        <a class="page-header__link-text" href="index.html" aria-current="page" tabindex="-1">
+          <img class="page-header__text logo-text" src="images/mobile-tablet-logo-text.svg" width="101" height="18" alt="логотип сайта в виде текста с надписью Сat Energy"></a>
+        <button class="page-header__toggle page-header__toggle--closed button-toggle" type="button">
           <span class="visually-hidden">Открыть/Закрыть главное меню</span>
         </button>
-        <ul class="main-nav__list">
+      </div>
+
+      <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+
+        <ul class="main-nav__list main-nav__list--white">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>

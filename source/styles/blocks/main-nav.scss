@@ -30,22 +30,6 @@
   }
 }
 
-.main-nav__toggle {
-  width: 24px;
-  height: 24px;
-  background-color: inherit;
-  border: none;
-  cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  &:hover {
-    opacity: 0.6;
-  }
-}
-
 .main-nav__link {
   color: $primary-color;
   display: block;
@@ -95,13 +79,6 @@
   }
 }
 
-.main-nav--closed .main-nav__toggle {
-  background-image: url("../../icons/stack.svg#burger");
-}
-
-.main-nav--opened .main-nav__toggle {
-  background-image: url("../../icons/stack.svg#cross-close");
-}
 
 .main-nav--closed .main-nav__list {
   display: none;
@@ -112,14 +89,28 @@
   }
 }
 
-.main-nav--opened .main-nav__list {
+.main-nav--opened .main-nav__list,
+.nojs .main-nav__list {
   display: block;
   position: absolute;
   background-color: $secondary-color;
-  min-width: 100vw;
+  width: 100vw;
   border-top: 1px solid $color-index-divider;
   top: 63px;
   left: 0;
   z-index: 10;
 }
 
+.nojs .main-nav__list {
+  position: static;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: unset;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    border-top: none;
+  }
+}

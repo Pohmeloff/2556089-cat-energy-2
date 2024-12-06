@@ -98,6 +98,10 @@
   }
 }
 
+.results__item {
+  margin: 0;
+}
+
 .results__item--cost {
 
   font-size: 14px;
@@ -136,7 +140,7 @@
   grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%);
   width: min(100%, 560px);
   aspect-ratio: 280/256;
-  margin: 20 0 auto;
+  margin: 20px auto 0;
 
   @media (min-width: $desktop-width) {
     margin: 0;

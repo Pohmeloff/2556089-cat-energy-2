@@ -9,7 +9,7 @@
     grid-template-rows: repeat(3, auto);
     grid-template-columns: 1fr 200px;
     gap: 24px 53px;
-    padding: 77px 63px 53px 52px;
+    padding: 77px 63px 57px 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,6 +29,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,7 +47,7 @@
     border: none;
     padding: 0;
     max-width: 340px;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -126,7 +127,7 @@
     height: 200px;
     grid-column: 2 / 3;
     grid-row: 1 / 4;
-    margin: 16px 0 0;
+    margin: 15px 0 0;
   }
 
   @media (min-width: $desktop-width) {

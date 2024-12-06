@@ -63,4 +63,8 @@
       transform: translateX(-50%);
     }
   }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+  }
 }

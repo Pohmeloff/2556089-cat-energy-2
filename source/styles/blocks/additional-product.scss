@@ -12,10 +12,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 0;
+    padding: 15px 0 16px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 40px;
   }
 }
@@ -42,7 +41,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 275px;
+    min-width: 285px;
     justify-content: space-between;
+  }
+}
+
+.additional-product__caption {
+  @media (min-width: $desktop-width) {
+    min-width: 285px;
   }
 }

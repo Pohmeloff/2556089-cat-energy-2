@@ -36,6 +36,11 @@
     border-left: 1px solid $color-catalog-divider-2;
     border-right: 1px solid $color-catalog-divider-2;
   }
+
+  @media (min-width: $desktop-width) {
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .additional__item {
@@ -48,6 +53,10 @@
   @media (min-width: $tablet-width) {
     min-width: 42px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
@@ -77,8 +86,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 32px;
-    line-height: 32px;
     margin-bottom: 80px;
     padding-left: 40px;
 
@@ -89,13 +96,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 40px;
-    line-height: 40px;
     padding-left: 0;
     box-shadow: 40px 0 0 0 $secondary-color, -40px 0 0 0 $secondary-color;
 
     &::before {
-      top: 20px;
+      top: 18px;
       box-shadow: -100vw 0 0 0 $accent;
     }
   }
@@ -127,5 +132,6 @@
   @media (min-width: $desktop-width) {
     padding: 185px 42px 43px;
     text-align: center;
+    width: 245px;
   }
 }

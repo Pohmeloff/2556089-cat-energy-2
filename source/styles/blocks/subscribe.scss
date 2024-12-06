@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 104px;
+  }
 }
 
 .subscribe__text {
@@ -33,7 +37,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 104px;
+
   }
 }
 
@@ -68,9 +72,10 @@
   @media (min-width: $desktop-width) {
     padding-left: 0;
     box-shadow: -40px 0 0 0 $secondary-color, 40px 0 0 0 $secondary-color;
+    margin-bottom: 72px;
 
     &::before {
-      top: 20px;
+      top: 18px;
     }
   }
 }

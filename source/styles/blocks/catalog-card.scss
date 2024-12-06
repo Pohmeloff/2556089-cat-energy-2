@@ -16,6 +16,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    row-gap: 23px;
     padding-top: 151px;
   }
 }
@@ -81,6 +82,10 @@
     padding-bottom: 5px;
     border-bottom: 1px solid $color-catalog-divider-2;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 7px;
+  }
 }
 
 .catalog-card__button {
@@ -90,5 +95,10 @@
   @media (min-width: $tablet-width) {
     grid-column: auto / span 1;
     margin-top: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    margin-top: 3px;
   }
 }

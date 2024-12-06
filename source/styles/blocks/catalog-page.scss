@@ -43,6 +43,10 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 120px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 165px;
+  }
 }
 
 .catalog-page__list {
@@ -58,7 +62,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 147px 80px;
+    gap: 144px 80px;
   }
 }
 

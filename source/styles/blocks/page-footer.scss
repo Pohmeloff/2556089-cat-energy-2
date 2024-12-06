@@ -34,7 +34,12 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 8px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 9px;
+  }
 }
+
 
 .page-footer__list {
   display: flex;

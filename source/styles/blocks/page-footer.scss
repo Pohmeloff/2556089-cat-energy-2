@@ -38,7 +38,6 @@
 
 .page-footer__list {
   display: flex;
-  gap: 24px;
   margin: 0;
   padding: 0;
 
@@ -71,4 +70,8 @@
   @media (min-width: $tablet-width) {
     margin-left: 40px;
   }
+}
+
+.page-footer__text {
+  display: block;
 }

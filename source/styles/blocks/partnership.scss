@@ -9,7 +9,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 95px 1220px 1fr;
+    grid-template-columns: 1fr 1220px 1fr;
+    grid-template-rows: 95px min-content;
   }
 
   &--catalog {

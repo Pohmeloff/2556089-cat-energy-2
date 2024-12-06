@@ -29,6 +29,7 @@
 
     @media (min-width: $desktop-width) {
       bottom: 0;
+      background-color: $neutral-color-1;
     }
   }
 }
@@ -137,6 +138,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    height: 512px;
   }
 }
 

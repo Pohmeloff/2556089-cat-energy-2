@@ -5,12 +5,18 @@
   font-weight: inherit;
   margin: 0;
 
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-  }
-
   &--low {
     line-height: 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+
+    font-size: 36px;
+    line-height: 36px;
+
+    &--low {
+      font-size: 32px;
+      line-height: 32px;
+    }
   }
 }

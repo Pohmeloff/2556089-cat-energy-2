@@ -31,6 +31,11 @@
   list-style-type: none;
   flex-grow: 1;
   border-bottom: 1px solid $color-catalog-divider-2;
+
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid $color-catalog-divider-2;
+    border-right: 1px solid $color-catalog-divider-2;
+  }
 }
 
 .additional__item {
@@ -39,6 +44,11 @@
 
 .additional__text {
   justify-self: right;
+
+  @media (min-width: $tablet-width) {
+    min-width: 42px;
+    text-align: right;
+  }
 }
 
 .additional__title {
@@ -73,7 +83,7 @@
     padding-left: 40px;
 
     &::before {
-      top: 16px;
+      top: 14px;
       box-shadow: -100vw 0 0 0 $accent;
     }
   }

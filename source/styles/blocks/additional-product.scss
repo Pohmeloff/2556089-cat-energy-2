@@ -5,6 +5,8 @@
   padding: 13px 0 18px;
 
   @media (min-width: $tablet-width) {
+    align-items: baseline;
+    row-gap: 21px;
     padding: 26px 38px 28px;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -35,7 +37,8 @@
 
   @media (min-width: $tablet-width) {
     justify-content: right;
-    gap: 39px;
+    gap: 49px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

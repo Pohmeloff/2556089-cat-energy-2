@@ -25,4 +25,3 @@ function shiftТheСurtain (event) {
 function stopTheCurtainShifting () {
   window.removeEventListener('pointermove', shiftТheСurtain);
 }
-

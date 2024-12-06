@@ -1,16 +1,16 @@
 .order-all {
-  background-image: linear-gradient(#68b738d9, #68b738d9), image-set("../../images/catalog-background-cat-mobile@1x.png" 1x type("image/jpg"), "../../images/catalog-background-cat-mobile@2x.png" 2x type("image/jpg")), linear-gradient(90deg, #9a9a9a 80%, #f3f3f3);
+  background-image: linear-gradient($accent-transparent, $accent-transparent), image-set("../../images/catalog-background-cat-mobile@1x.png" 1x type("image/jpg"), "../../images/catalog-background-cat-mobile@2x.png" 2x type("image/jpg")), linear-gradient(90deg, #9a9a9a 80%, #f3f3f3);
   background-repeat: no-repeat;
   color: $secondary-color;
   position: relative;
 
   @media (min-width: $tablet-width) {
 
-    background-image: linear-gradient(#68b738d9, #68b738d9), image-set("../../images/catalog-background-cat-tablet@1x.png" 1x type("image/jpg"), "../../images/catalog-background-cat-tablet@2x.png" 2x type("image/jpg")), linear-gradient(90deg, #9a9a9a 80%, #f3f3f3);
+    background-image: linear-gradient($accent-transparent, $accent-transparent), image-set("../../images/catalog-background-cat-tablet@1x.png" 1x type("image/jpg"), "../../images/catalog-background-cat-tablet@2x.png" 2x type("image/jpg")), linear-gradient(90deg, #9a9a9a 80%, #f3f3f3);
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(#68b738d9, #68b738d9), image-set("../../images/catalog-background-cat-desktop@1x.png" 1x type("image/jpg"), "../../images/catalog-background-cat-desktop@2x.png" 2x type("image/jpg")), linear-gradient(90deg, #9a9a9a 80%, #f3f3f3);
+    background-image: linear-gradient($accent-transparent, $accent-transparent), image-set("../../images/catalog-background-cat-desktop@1x.png" 1x type("image/jpg"), "../../images/catalog-background-cat-desktop@2x.png" 2x type("image/jpg")), linear-gradient(90deg, #9a9a9a 80%, #f3f3f3);
   }
 
   &::before {

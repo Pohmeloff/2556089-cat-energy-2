@@ -40,7 +40,6 @@
   }
 }
 
-
 .page-header__link-cat {
   &:hover,
   &:focus {
@@ -96,7 +95,6 @@
   }
 }
 
-
 .page-header__toggle--closed {
   background-image: url("../../icons/stack.svg#burger");
 }
@@ -108,4 +106,3 @@
 .nojs .page-header__toggle {
   visibility: hidden;
 }
-

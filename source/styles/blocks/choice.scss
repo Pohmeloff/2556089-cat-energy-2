@@ -92,6 +92,10 @@
     line-height: 20px;
     margin-bottom: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .choice__button {

@@ -28,13 +28,18 @@
   padding: 13px 0;
   width: 280px;
 
-
   @media (min-width: $tablet-width) {
     width: 174px;
     gap: 13px;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    gap: 14px;
+  }
 }
+
 
 .page-header__link-cat {
   &:hover,
@@ -60,6 +65,14 @@
 
   @media (min-width: $tablet-width) {
     margin-right: auto;
+  }
+}
+
+.page-header__text {
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+    display: block;
   }
 }
 

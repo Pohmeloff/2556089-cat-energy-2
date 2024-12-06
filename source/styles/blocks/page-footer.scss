@@ -30,6 +30,10 @@
   &:active {
     opacity: 0.4;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+  }
 }
 
 .page-footer__list {

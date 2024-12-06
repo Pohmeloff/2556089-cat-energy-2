@@ -68,7 +68,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    gap: 55px;
+    gap: 57px;
     margin-bottom: 0;
   }
 }
@@ -133,8 +133,11 @@
   grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%);
   width: min(100%, 560px);
   aspect-ratio: 280/256;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 20 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .results__image {

@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1220px 1fr;
+    grid-template-columns: 95px 1220px 1fr;
   }
 
   &--catalog {
@@ -31,7 +31,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    text-align: right;
+    text-align: left;
   }
 }
 
@@ -52,8 +52,10 @@
     grid-row: 2/3;
     z-index: 4;
     background-color: $secondary-color;
-    max-width: 407px;
+    max-width: 565px;
+    box-sizing: border-box;
     gap: 87px;
+    padding: 60px 78px 60px 80px;
   }
 
   &--catalog {

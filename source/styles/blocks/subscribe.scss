@@ -47,7 +47,7 @@
   position: relative;
   width: fit-content;
   background-color: $secondary-color;
-  box-shadow: 40px 0 0 0 $secondary-color;
+  box-shadow: 40px 0 0 0 $secondary-color, -40px 0 0 0 $secondary-color;
 
   &::before {
     position: absolute;
@@ -56,23 +56,25 @@
     height: 2px;
     background-color: $accent;
     top: 10px;
-    left: 0;
+    right: 0;
+    box-shadow: 100vw 0 0 0 $accent;
     z-index: -1;
   }
 
   @media (min-width: $tablet-width) {
     padding-left: 40px;
     margin-bottom: 66px;
+    box-shadow: 40px 0 0 0 $secondary-color;
 
     &::before {
       top: 14px;
-      box-shadow: -100vw 0 0 0 $accent;
+      box-shadow: 100vw 0 0 0 $accent;
     }
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
-    box-shadow: -40px 0 0 0 $secondary-color, 40px 0 0 0 $secondary-color;
+    box-shadow: 40px 0 0 0 $secondary-color, -40px 0 0 0 $secondary-color;
     margin-bottom: 72px;
 
     &::before {

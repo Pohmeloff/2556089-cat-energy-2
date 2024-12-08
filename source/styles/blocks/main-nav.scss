@@ -17,6 +17,8 @@
     position: static;
     border: none;
     margin-right: 5px;
+    flex-wrap: wrap;
+    max-width: 500px;
   }
 
   @media (min-width: $desktop-width) {

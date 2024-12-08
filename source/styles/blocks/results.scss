@@ -1,38 +1,17 @@
 .results {
   --curtain-place: 0.5;
-
-  position: relative;
-
+  background-color: $neutral-color-2;
   padding: 25px 0 40px;
 
   @media (min-width: $tablet-width) {
     padding: 45px 0 101px;
+    background-image: linear-gradient(0deg, $neutral-color-2 462px, $secondary-color 462px);
   }
 
   @media (min-width: $desktop-width) {
+    background-image: linear-gradient($secondary-color 136px, $neutral-color-1 136px);
+    border: none;
     padding: 0 0 75px;
-  }
-
-  &::before {
-    content: "";
-    background-color: $neutral-color-2;
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-
-    @media (min-width: $tablet-width) {
-
-      bottom: 0;
-      height: 462px;
-    }
-
-    @media (min-width: $desktop-width) {
-      bottom: 0;
-      background-color: $neutral-color-1;
-    }
   }
 }
 
@@ -78,6 +57,7 @@
 
 .results__list-wrapper {
   display: flex;
+  align-items: start;
   gap: 32px;
 
   @media (min-width: $tablet-width) {

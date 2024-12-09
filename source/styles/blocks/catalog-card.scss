@@ -43,6 +43,15 @@
     max-width: 135px;
     margin: 0 auto;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog-card__description {
@@ -74,6 +83,14 @@
   @media (min-width: $desktop-width) {
     width: 169px;
     height: 210px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
